@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <title>ACME CAR Rental</title>
+    <h2>ACME CAR Rental</h2>
+    <script src="/index.js" defer></script>
+    
+</head>
+
+<body>
+    <div>
+        <label for="pickDate">Pickup Date:</label>
+        <input type="date" id="pickDate">
+    </div>
+
+    <div>
+        <label for="noOfDays">No Of Days:</label>
+        <input type="text" id="noOfDays" name="noOfDays">
+    </div>
+
+    <div>
+        <p>Options : </p>
+        <input type="checkbox" id="ElectronicTag" name="tax" value="3.99">
+        <label for="ElectronicTag"> Electronic Toll Tag($3.95/day)</label><br>
+        <input type="checkbox" id="GPS" name="tax" value="2.95">
+        <label for="GPS"> GPS($2.95/day)</label><br>
+        <input type="checkbox" id="RoadTag" name="tax" value="2.95">
+        <label for="RoadTag"> Roadside Assistance($2.95/day)</label><br>
+    </div>
+
+    <div>
+        <p>Under 25</p>
+        <input type="radio" id="yesRadioBtn" name="age" value="yes">
+        <label for="ageYes">Yes</label><br>
+        <input type="radio" id="noRadioBtn" name="age" value="no">
+        <label for="ageNo">No</label><br>
+    </div>
+
+    <div>
+        <input type="submit" id="submit" value="Estimate Total Cost">
+    </div>
+
+    <div style="margin-top: 50px; margin-left: 50px;">
+
+       
+    
+        <div>
+            Car Rental : <span id="carRental"> xx.xx </span>
+           
+        </div>
+        <div>
+            Options: <span id="options">xx.xx</span>
+            
+        </div>
+        <div>
+            Under 25 Surcharge: <span id="surCharge">xx.xx</span>
+        </div>
+        <div>
+            Total Due:<span id="total">xx.xx</span>
+    
+        </div>
+
+    </div>
+
+    
+    
+</body>
